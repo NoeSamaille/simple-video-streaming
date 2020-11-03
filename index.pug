@@ -1,0 +1,20 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    style
+      include index.css
+body
+  .header
+    h1 #{title} 
+  img(src="", alt="Stream: no content yet", style="width:100%")
+  script.
+    const img = document.querySelector('img');
+    const WS_URL = '#{ws_url}';
+    const ws = new WebSocket(WS_URL);
+    ws.onopen = () => console.log(`Connected to ${WS_URL}`);
+    ws.onmessage = message => {
+      // Set the base64 string to the src tag of the image
+      img.src = message.data;
+    }

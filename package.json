@@ -1,0 +1,34 @@
+{
+  "name": "simple-streaming-server",
+  "version": "0.0.1",
+  "description": "Starter WebSocket server with simple streaming client.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoeSamaille/simple-video-streaming.git"
+  },
+  "keywords": [
+    "streaming",
+    "video",
+    "websocket",
+    "express",
+    "starter"
+  ],
+  "author": "Noé Samaille",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoeSamaille/simple-video-streaming/issues"
+  },
+  "homepage": "https://github.com/NoeSamaille/simple-video-streaming#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "path": "^0.12.7",
+    "pug": "^3.0.0",
+    "ws": "^7.3.1"
+  }
+}
